@@ -1,63 +1,63 @@
 var a = $(".lwn0").text();
+var header = $(".semester-header").text();
+var rep;
 
-var rep = a.replace(a, a.split(' - ')[0]);
-    $(".lwn0").text(rep);
+$( ".submit" ).click(function() {
+    if($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2015"){
+        rep = "Fall 2015 Semester";
+        $(".semester-header").html(rep);
+    }
+   
+    else if($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2016"){
+        rep = "Fall 2016 Semester";
+        $(".semester-header").html(rep);
+    }
+    
+    else if($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2017"){
+        rep = "Fall 2017 Semester";
+        $(".semester-header").html(rep);
+    }
 
-if (a.substring(0, 3) == "Aug") {
-    var replaced = $(".lwn0").html().replace('Aug', 'August');
-    $(".lwn0").html(replaced);
+    else if($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2015"){
+        rep = "Spring 2015 Semester";
+        $(".semester-header").html(rep);
+    }
+    
+    else if($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2016"){
+        rep = "Spring 2016 Semester";
+        $(".semester-header").html(rep);
+    }    
+    
+    else if($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2017"){
+        rep = "Spring 2017 Semester";
+        $(".semester-header").html(rep);
+    }    
+    
+    else if($("#Semester").find(":selected").text() === "Summer"&& $("#Year").find(":selected").text() === "2015"){
+        rep = "Summer 2015 Semester";
+        $(".semester-header").html(rep);
+    }
+    
+    else if($("#Semester").find(":selected").text() === "Summer"&& $("#Year").find(":selected").text() === "2016"){
+        rep = "Summer 2016 Semester";
+        $(".semester-header").html(rep);
+    }    
+   
+    else if($("#Semester").find(":selected").text() === "Summer"&& $("#Year").find(":selected").text() === "2017"){
+        rep = "Summer 2017 Semester";
+        $(".semester-header").html(rep);
+    }    
+});
+
+
+
+$(".lwn0").css({
+    "float":"left"   
+});
+
+var json = $.getJSON("https://events.shsu.edu/api/2/events");
+
+if(json.event.first_date === "2015-06-02"){
+      $(".json-obj-fd").html(rep);
 }
 
-else if (a.substring(0, 3) == "Sep") {
-    var replaced = $(".lwn0").html().replace('Sep', 'September');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Oct") {
-    var replaced = $(".lwn0").html().replace('Oct', 'October');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Nov") {
-    var replaced = $(".lwn0").html().replace('Nov', 'November');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Dec") {
-    var replaced = $(".lwn0").html().replace('Dec', 'December');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Jan") {
-    var replaced = $(".lwn0").html().replace('Jan', 'January');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Feb") {
-    var replaced = $(".lwn0").html().replace('Feb', 'February');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Mar") {
-    var replaced = $(".lwn0").html().replace('Mar', 'March');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Apr") {
-    var replaced = $(".lwn0").html().replace('Apr', 'April');
-    $(".lwn0").html(replaced);
-}
-
-//
-//Dont need to do anything for May. YAY.
-//
-
-else if (a.substring(0, 3) == "Jun") {
-    var replaced = $(".lwn0").html().replace('Jun', 'June');
-    $(".lwn0").html(replaced);
-}
-
-else if (a.substring(0, 3) == "Jul") {
-    var replaced = $(".lwn0").html().replace('Jul', 'July');
-    $(".lwn0").html(replaced);
-}
