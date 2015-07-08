@@ -581,10 +581,25 @@ $(".submit").click(function () {
 for(i=0; i <= 6; i++)
 {
    
-    if(data.events[i].event.first_date.substring(5, 7) !== '08' && 
+    if(data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') && 
         $("#Semester").find(":selected").text() === "Fall"){
          //do something 
     }
+    
+    else if(data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') && 
+        $("#Semester").find(":selected").text() === "Spring"){
+         //do something 
+    }    
+    
+    else if(data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') && 
+        $("#Semester").find(":selected").text() === "Summer"){
+         //do something 
+    }
+    
+    else {
+         //do something   
+    }
+    
 }
 
 });
