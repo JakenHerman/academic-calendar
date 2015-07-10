@@ -548,6 +548,9 @@ var data = {
   }
 };
 
+$("#lclst_widget_footer").hide();
+$(".widget").hide();
+
 $(".submit").click(function () {
     if ($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2015") {
         rep = "Fall 2015 Semester";
@@ -578,36 +581,29 @@ $(".submit").click(function () {
         $(".semester-header").html(rep);
     }
     
+    
+
 for(i=0; i <= 6; i++)
 {
-   
-    if(data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') && 
+    if(data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && 
         $("#Semester").find(":selected").text() === "Fall"){
-         //do something 
-    }
-    
-    else if(data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') && 
+         $(".widget").show();
+    }   
+    else if(data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && 
         $("#Semester").find(":selected").text() === "Spring"){
-         //do something 
+         $(".widget").show();
     }    
-    
-    else if(data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') && 
+    else if(data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && 
         $("#Semester").find(":selected").text() === "Summer"){
-         //do something 
+         $(".widget").show();
     }
-    
     else {
-         //do something   
-    }
-    
+        data.events[i].event.first_date.substring(5, 7).hide();
+    }  
 }
-
 });
-
 
 $(".lwn0").css({
     "float": "left"
 });
-
-
 
