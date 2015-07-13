@@ -549,7 +549,7 @@ var data = {
 };
 
 $("#lclst_widget_footer").hide();
-$(".widget").hide();
+$(".lwe").hide();
 
 $(".submit").click(function () {
     if ($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2015") {
@@ -581,21 +581,38 @@ $(".submit").click(function () {
         $(".semester-header").html(rep);
     }
     
-    
+var weekday = new Array(7);   
+weekday[0]=  "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
 
 for(i=0; i <= 6; i++)
 {
     if(data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && 
         $("#Semester").find(":selected").text() === "Fall"){
-         $(".widget").show();
+         $(".lwe").show();
+        var d = new Date.parse(data.events[i].event.first_date);
+        var n = weekday[d.getDay()];
+        $(".lwn0").append(n)
     }   
     else if(data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && 
         $("#Semester").find(":selected").text() === "Spring"){
-         $(".widget").show();
+         $(".lwe").show();
+        var d = new Date.parse(data.events[i].event.first_date);
+        var n = weekday[d.getDay()];
+        $(".lwn0").append(n)
     }    
     else if(data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && 
         $("#Semester").find(":selected").text() === "Summer"){
-         $(".widget").show();
+         $(".lwe").show();
+        var d = new Date.parse(data.events[i].event.first_date);
+        alert(d);
+        var n = weekday[d.getDay()];
+        $(".lwn0").append(n)
     }
     else {
         data.events[i].event.first_date.substring(5, 7).hide();
@@ -603,7 +620,7 @@ for(i=0; i <= 6; i++)
 }
 });
 
+
 $(".lwn0").css({
     "float": "left"
 });
-
