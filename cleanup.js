@@ -1,7 +1,6 @@
 var a = $(".lwn0").text();
 var header = $(".semester-header").text();
 var rep;
-
 var data = {
     "events": [{
         "event": {
@@ -46,12 +45,8 @@ var data = {
                 "venue_id": null,
                 "ticket_url": "",
                 "ticket_cost": "",
-                "keywords": [
-
-            ],
-                "tags": [
-
-            ],
+                "keywords": [],
+                "tags": [],
                 "description_text": "The Sam Houston Memorial Museum is proud to be a part of Blue Star Museums, a national appreciation program to thank our military families for their service and share with them America's cultural treasures.  Blue Star Museums is a collaboration amonth the National Endowment for the Arts, Blue Star Families, the Department of Defense, and more than 2,000 museums across America to offer free admission to the nation's active duty military personnel, including National Guard and Reserve, and up to five family members.  This program runs Memorial Day to Labor Day.",
                 "photo_id": 280257,
                 "detail_views": 799,
@@ -77,9 +72,7 @@ var data = {
                         "id": 37311
                 }]
             },
-                "custom_fields": {
-
-            },
+                "custom_fields": {},
                 "localist_url": "https:\/\/events.shsu.edu\/event\/blue_star_museums_5651",
                 "photo_url": "https:\/\/d3e1o4bcbhmj8g.cloudfront.net\/photos\/280257\/huge\/e22c5fb0dbfb98e2e492ffe239f78fc3d8948cb7.jpg",
                 "venue_url": null
@@ -127,12 +120,8 @@ var data = {
                 "venue_id": null,
                 "ticket_url": "",
                 "ticket_cost": "",
-                "keywords": [
-
-            ],
-                "tags": [
-
-            ],
+                "keywords": [],
+                "tags": [],
                 "description_text": "The first class day for the second summer session is July 7. Residence halls open for occupancy at 11 a.m. on July 6.  The last day to register and process schedule changes is July 8. Refer to the Schedule of Classes for details.",
                 "photo_id": 276210,
                 "detail_views": 774,
@@ -158,9 +147,7 @@ var data = {
                         "id": 37279
                 }]
             },
-                "custom_fields": {
-
-            },
+                "custom_fields": {},
                 "localist_url": "https:\/\/events.shsu.edu\/event\/summer_session_ii_7737",
                 "photo_url": "https:\/\/d3e1o4bcbhmj8g.cloudfront.net\/photos\/276210\/huge\/1579f8221c25fe4b56214adf1ef98bef875cc8e2.jpg",
                 "venue_url": null
@@ -208,12 +195,8 @@ var data = {
                 "venue_id": null,
                 "ticket_url": "",
                 "ticket_cost": "",
-                "keywords": [
-
-            ],
-                "tags": [
-
-            ],
+                "keywords": [],
+                "tags": [],
                 "description_text": "The TRIES Analytical lab is having a buy one test get one for 1\/2 price event. The sponsored tests are soil 1\/home gardener ($10), soil 2 ($15), well water ($30), home water ($30), basic gas drilling ($175), forage 1 ($15) and forage 2 ($25). Contact us at 936-294-3979.",
                 "photo_id": null,
                 "detail_views": 5225,
@@ -239,9 +222,7 @@ var data = {
                         "id": 37311
                 }]
             },
-                "custom_fields": {
-
-            },
+                "custom_fields": {},
                 "localist_url": "https:\/\/events.shsu.edu\/event\/tries_analytical_lab_testing_event",
                 "photo_url": "https:\/\/d3e1o4bcbhmj8g.cloudfront.net\/assets\/main\/business_huge-18aa15a22f893e437c2e1baaead28fc2.png",
                 "venue_url": null
@@ -289,12 +270,8 @@ var data = {
                 "venue_id": null,
                 "ticket_url": "",
                 "ticket_cost": "",
-                "keywords": [
-
-            ],
-                "tags": [
-
-            ],
+                "keywords": [],
+                "tags": [],
                 "description_text": "A Sam Houston Memorial Museum exhibit displaying gorgeous dresses and other vintage clothing and accessories in a myriad of color and grandeur, through July 19 in the Katy & E. Don Walker Sr. Education Center Exhibit Gallery. \n\nAll items are normally tucked safely away in museum storage.  The exhibit can be viewed during museum hours: Tuesday through Sunday, from 9 a.m. to 4:30 p.m., or Sunday, from noon to 4:30 p.m. The museum is closed Monday and holidays.  For more information, call 936.294-1832.",
                 "photo_id": 280243,
                 "detail_views": 781,
@@ -323,9 +300,7 @@ var data = {
                         "id": 37287
                 }]
             },
-                "custom_fields": {
-
-            },
+                "custom_fields": {},
                 "localist_url": "https:\/\/events.shsu.edu\/event\/textile_treasures",
                 "photo_url": "https:\/\/d3e1o4bcbhmj8g.cloudfront.net\/photos\/280243\/huge\/54d230328f12ba58fb8a7808e45b95854500ee48.jpg",
                 "venue_url": null
@@ -373,12 +348,8 @@ var data = {
                 "venue_id": null,
                 "ticket_url": "",
                 "ticket_cost": "",
-                "keywords": [
-
-            ],
-                "tags": [
-
-            ],
+                "keywords": [],
+                "tags": [],
                 "description_text": "From June 9 to August 28 the Sam Houston Memorial Museum offers guided tours Tuesday thru Friday at 10:00 a.m. or 2:00 p.m.  The tour begins at our Katy & E. Don Walker, Sr. Education Center with a short introductory video, then moves out to the historic grounds, and ends at the Main Museum.  The tour is included in your admission donation.  For these summertime tours, groups of all ages and sizes are welcome, though reservations are highly encouraged.  The Museum Education Department can be contacted at (936) 294-3153 for more information or to set up a reservation.",
                 "photo_id": 280269,
                 "detail_views": 820,
@@ -404,9 +375,7 @@ var data = {
                         "id": 37311
                 }]
             },
-                "custom_fields": {
-
-            },
+                "custom_fields": {},
                 "localist_url": "https:\/\/events.shsu.edu\/event\/sam_houston_memorial_museum_complex_guided_tours",
                 "photo_url": "https:\/\/d3e1o4bcbhmj8g.cloudfront.net\/photos\/280269\/huge\/4de34d73d28ba3c94ca373237dbc92062894bae7.jpg",
                 "venue_url": null
@@ -454,12 +423,8 @@ var data = {
                 "venue_id": null,
                 "ticket_url": "",
                 "ticket_cost": "",
-                "keywords": [
-
-            ],
-                "tags": [
-
-            ],
+                "keywords": [],
+                "tags": [],
                 "description_text": "Daily tours are offered at the John R. Ragsdale Visitor and Alumni Center Monday - Friday at 10AM, 12PM and 2PM. The tour includes a general presentation about SHSU providing information regarding costs, admission requirements, housing, etc. followed by a video presentation and a walking tour of campus led by a student ambassador. Approximate duration: 2 hours.\n\nPlease be sure to register for the event online or by calling 1-866-BEARKATS.",
                 "photo_id": 283358,
                 "detail_views": 586,
@@ -485,9 +450,7 @@ var data = {
                         "id": 37303
                 }]
             },
-                "custom_fields": {
-
-            },
+                "custom_fields": {},
                 "localist_url": "https:\/\/events.shsu.edu\/event\/shsu_campus_tours",
                 "photo_url": "https:\/\/d3e1o4bcbhmj8g.cloudfront.net\/photos\/283358\/huge\/caa51d1e6ee95f4d696e1b3feac11b3943a003fa.jpg",
                 "venue_url": null
@@ -503,18 +466,19 @@ var data = {
             "last": "2015-07-08"
     }
 };
-
 $("#lclst_widget_footer").hide();
 $(".lwe").hide();
-
 $(".submit").click(function () {
-    if ($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2015") {
+    if ($("#Semester").find(":selected").text() === "Fall" && $("#Year")
+        .find(":selected").text() === "2015") {
         rep = "Fall 2015 Semester";
         $(".semester-header").html(rep);
-    } else if ($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2016") {
+    } else if ($("#Semester").find(":selected").text() === "Fall" && $(
+        "#Year").find(":selected").text() === "2016") {
         rep = "Fall 2016 Semester";
         $(".semester-header").html(rep);
-    } else if ($("#Semester").find(":selected").text() === "Fall" && $("#Year").find(":selected").text() === "2017") {
+    } else if ($("#Semester").find(":selected").text() === "Fall" && $(
+        "#Year").find(":selected").text() === "2017") {
         rep = "Fall 2017 Semester";
         $(".semester-header").html(rep);
     } else if ($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2015") {
@@ -536,44 +500,84 @@ $(".submit").click(function () {
         rep = "Summer 2017 Semester";
         $(".semester-header").html(rep);
     }
-
-    var weekday = new Array(7);
-    weekday[0] = "Sunday";
-    weekday[1] = "Monday";
-    weekday[2] = "Tuesday";
-    weekday[3] = "Wednesday";
-    weekday[4] = "Thursday";
-    weekday[5] = "Friday";
-    weekday[6] = "Saturday";
-
     for (i = 0; i <= 6; i++) {
-        if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall") {
-            if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12')) {
+
+        /*
+         *		FALL SEM FOR ALL YEARS
+         */
+        if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find(":selected").text() === "2015")) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
                 $(".lwe").hide();
             } else {
                 $(".lwe").show();
             }
-            var d = new Date.parse(data.events[i].event.first_date);
-            var n = weekday[d.getDay()];
-            $(".lwn0").append(n);
-        } else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring") {
-            if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05')) {
+
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find(":selected").text() === "2016")) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
                 $(".lwe").hide();
             } else {
                 $(".lwe").show();
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer") {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-                } else {
-                    data.events[i].event.first_date.substring(5, 7).hide();
-                }
             }
+
+
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find(":selected").text() === "2017")) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        }
+
+        /*
+         *		SPRING SEM FOR ALL YEARS
+         */
+
+        else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find(":selected").text() === '2015')) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find(":selected").text() === '2016')) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find(":selected").text() === '2017')) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        }
+    
+        /*
+         *		SUMMER SEM FOR ALL YEARS
+         */
+
+        else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find.(":selected").text() === '2015')) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find.(":selected").text() === '2016')) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find.(":selected").text() === '2017')) {
+            if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
+                $(".lwe").hide();
+            } else {
+                $(".lwe").show();
+            }
+        } else {
+            $(".lwe").hide();
+        }
+        }
+        }); $(".lwn0").css({
+            "float": "left"
         });
-
-
-    $(".lwn0").css({
-        "float": "left"
-    });
