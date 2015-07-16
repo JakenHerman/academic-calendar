@@ -1,6 +1,10 @@
 var a = $(".lwn0").text();
 var header = $(".semester-header").text();
-var rep;
+var replaced;
+$(".lwl").hide();
+$(".lwi").hide();
+
+
 var data = {
     "events": [{
         "event": {
@@ -551,24 +555,24 @@ $(".submit").click(function () {
                 $(".lwe").show();
             }
         }
-    
+
         /*
          *		SUMMER SEM FOR ALL YEARS
          */
 
-        else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find.(":selected").text() === '2015')) {
+        else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find(":selected").text() === '2015')) {
             if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
                 $(".lwe").hide();
             } else {
                 $(".lwe").show();
             }
-        } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find.(":selected").text() === '2016')) {
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find(":selected").text() === '2016')) {
             if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
                 $(".lwe").hide();
             } else {
                 $(".lwe").show();
             }
-        } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find.(":selected").text() === '2017')) {
+        } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find(":selected").text() === '2017')) {
             if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
                 $(".lwe").hide();
             } else {
@@ -577,7 +581,48 @@ $(".submit").click(function () {
         } else {
             $(".lwe").hide();
         }
-        }
-        }); $(".lwn0").css({
-            "float": "left"
-        });
+    }
+});
+
+$(".lwn0").css({
+    "float": "left"
+});
+
+$(".lwn").css({
+    "text-align": "center"
+});
+
+var repJan = $(".lwn0").html().replace(/Jan/g, "January");
+$(".lwn0").html(repJan);
+
+var repFeb = $(".lwn0").html().replace(/Feb/g, "February");
+$(".lwn0").html(repFeb);
+
+var repMar = $(".lwn0").html().replace(/Mar/g, "March");
+$(".lwn0").html(repMar);
+
+var repApr = $(".lwn0").html().replace(/Apr/g, "April");
+$(".lwn0").html(repApr);
+
+// Nothing to do for May. Yeehaw!
+
+var repJun = $(".lwn0").html().replace(/Jun/g, "June");
+$(".lwn0").html(repJun);
+
+var repJul = $(".lwn0").html().replace(/Jul/g, "July");
+$(".lwn0").html(repJul);
+
+var repAug = $(".lwn0").html().replace(/Aug/g, "August");
+$(".lwn0").html(repAug);
+
+var repSep = $(".lwn0").html().replace(/Sep/g, "September");
+$(".lwn0").html(repSep);
+
+var repOct = $(".lwn0").html().replace(/Oct/g, "October");
+$(".lwn0").html(repOct);
+
+var repNov = $(".lwn0").html().replace(/Nov/g, "November");
+$(".lwn0").html(repNov);
+
+var repDec = $(".lwn0").html().replace(/Dec/g, "December");
+$(".lwn0").html(repDec);
