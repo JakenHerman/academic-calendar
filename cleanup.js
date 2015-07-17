@@ -505,7 +505,41 @@ $(".submit").click(function () {
         $(".semester-header").html(rep);
     }
     for (i = 0; i <= 6; i++) {
+        
+        
 
+var firstDate = new Date(data.events[i].event.first_date);
+var getWeekday = firstDate.getDay();
+var weekdayDisplay;
+
+switch (getWeekday) {
+    case 0:
+        weekdayDisplay = "Sunday";
+        break;
+    case 1:
+        weekdayDisplay = "Monday";
+        break;
+    case 2:
+        weekdayDisplay = "Tuesday";
+        break;
+    case 3:
+        weekdayDisplay = "Wednesday";
+        break;
+    case 4:
+        weekdayDisplay = "Thursday";
+        break;
+    case 5:
+        weekdayDisplay = "Friday";
+        break;
+    case 6:
+        weekdayDisplay = "Saturday";
+        break;
+    default:
+        weekdayDisplay = "Error";
+        break;
+}
+
+$(".lwn0").before(weekdayDisplay);
         /*
          *		FALL SEM FOR ALL YEARS
          */
