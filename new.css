@@ -1,0 +1,85 @@
+tr:nth-child(odd) {
+    background-color: #EDF2FA !important;
+}
+caption {
+    font-size: 2em !important;
+    color: #292D85!important;
+    text-transform: uppercase;
+    font-family:montserrat-bold, Helvetica, Arial, sans-serif;
+}
+.academic-calendar.json {
+    border='2';
+    border-left: 1px solid #CCC !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    border-top: 1px solid #CCC !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #CCC;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-left-color: #CCC;
+}
+td {
+    border='2';
+    border-left: 1px solid #CCC !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    border-top: 1px solid #CCC !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #CCC;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
+tr {
+    border='2';
+    border-left: 1px solid #CCC !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    border-top: 1px solid #CCC !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #CCC;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-left-color: #CCC;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
