@@ -1,201 +1,815 @@
+<!doctype html>
+<!--[if IE 9]><html lang="en" class="lt-ie10"><![endif]-->
+<html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)" />
 <head>
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-</head>
-
-<div class="small-6 large-6 columns">
-<select id="Semester" style="display: inline-block">
-<option value="Fall">Fall</option>
-<option value="Spring">Spring</option>
-<option value="Summer" selected>Summer</option>
-</select>
-</div>
-<div class="small-6 large-6 columns">  
-<select id="Year" style="display: inline-block">
-<option value="2015">2015</option>
-<option value="2016">2016</option>
-<option value="2017">2017</option>
-</select>
-</div>
-    <div class="small-6 large-6 columns">
-
-<p class="submit-button" style="display: inline-block"><input class="submit" value="Submit" type="submit" /></p>
-  
-  </div>
-<script>
-    $(function () {
-        $(".submit").click();
-    });
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Calendar</title>
+  <meta name="robots" content="NOODP" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="Sam Houston State University"/>
+  <meta name="copyright" content="Sam Houston State University Copyright (c) 2014"/>
+  <meta property="og:title" content="Academic Calendar" />
+  <meta property="og:site_name" content="SHSU Online"/>
+  <meta property="og:url" content="http://www.shsu.edu/dept/registrar/calendars/academic-calendar.html" />
+  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <link rel="apple-touch-icon" sizes="57x57" href="http://www.shsu.edu/global/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="http://www.shsu.edu/global/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="http://www.shsu.edu/global/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="http://www.shsu.edu/global/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="http://www.shsu.edu/global/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="http://www.shsu.edu/global/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="http://www.shsu.edu/global/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://www.shsu.edu/global/favicons/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="http://www.shsu.edu/global/favicons/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="http://www.shsu.edu/global/favicons/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="http://www.shsu.edu/global/favicons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="http://www.shsu.edu/global/favicons/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="http://www.shsu.edu/global/favicons/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#f68e1e">
+  <meta name="msapplication-TileImage" content="http://www.shsu.edu/global/favicons/mstile-144x144.png">
+  <link rel="stylesheet" href="http://www.shsu.edu/global/foundation-framework/css/foundation.css" />
+  <link rel="stylesheet" type="text/css" href="http://www.shsu.edu/global/scripts/slick/slick.css"/>
+  <link rel="stylesheet" href="http://www.shsu.edu/global/styles/shsu-main.css" />
+  <link rel="stylesheet" href="http://www.shsu.edu/global/fonts/icons/foundation-icons.css" />
+  <script src="http://www.shsu.edu/global/foundation-framework/js/vendor/modernizr.js"></script>
+  <script src="http://www.shsu.edu/global/foundation-framework/js/vendor/jquery.js"></script>
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
   </script>
-<h3 class="semester-header"></h3>
-<h1 class="json-obj-fd"></h1>
-<p></p>
-<script type="text/javascript" src="https://events.shsu.edu/widget/view?schools=samhouston&amp;days=31&amp;num=50&amp;html_descriptions=1"></script>
-<div id="lclst_widget_footer"><a rel="nofollow" style="margin-left: auto; margin-right: auto; display: block; width: 81px; margin-top: 10px;" title="Widget powered by Localist Online Calendar Software" href="http://www.localist.com?utm_source=widget&amp;utm_campaign=widget_footer&amp;utm_medium=branded%20link"><img src="//d3e1o4bcbhmj8g.cloudfront.net/assets/platforms/default/about/widget_footer.png" alt="Localist Online Calendar Software" style="vertical-align: middle;" height="23" width="81" /></a></div>
-<script type="text/javascript">// <![CDATA[
-    var a = $(".lwn0").text();
-    var header = $(".semester-header").text();
-    var replaced;
-    $(".lwl").hide();
-    $(".lwi").hide();
+  <script src="http://www.shsu.edu/global/scripts/picturefill.min.js" async></script>
+  <script type="text/javascript" src="http://www.shsu.edu/global/scripts/slick/slick.min.js"></script>
+  <script src="http://www.shsu.edu/global/scripts/shsu.js"></script>
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="http://www.shsu.edu/global/styles/ie.css" />
+  <![endif]-->
+</head>
+<body>
+  <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <aside class="left-off-canvas-menu">
+        <div id="top-menu-search-box-wrapper" class="show-for-small-only"></div>
+        <div id="top-menu-campus-tools-box-wrapper"></div>
+        <div id="top-menu-fastlinks-box-wrapper"></div>
+        <div class="off-canvas-label">Main Menu</div>
+        <div id="top-menu-nav-wrapper"></div>
+        <div class="off-canvas-label">Sub Menu</div>
+        <div id="top-menu-subnav-wrapper"></div>
+      </aside>
+      <a class="exit-off-canvas"></a>
+      <header id="shsu-header">
+          		  <div class="row" >
+          <div class="small-12 columns show-for-small-only">
+            <ul id="top-right-calltoactions">
+              <li><a href="//www.shsu.edu/dept/university-advancement/giving.html" title="Give to SHSU"><i class="icon-gift adjust"></i>Give</a></li>
+              <li><a href="//www.shsu.edu/mysammypage/" target="_blank" title="Request info from SHSU"><i class="fi-info"></i>Request Info</a></li>
+              <li><a href="//www.shsu.edu/dept/visitors/index.html" title="Visit SHSU"><i class="fi-marker"></i>Visit</a></li>
+              <li><a href="//www.shsu.edu/admissions/apply-texas.html" title="Apply to SHSU"><i class="fi-check"></i>Apply</a></li>
+            </ul>
+          </div>
+          <div class="small-12 medium-3 large-4 columns">
+            <a href="//www.shsu.edu" class="shsu-logo"><img src="http://www.shsu.edu/global/images/responsive/shsu.png" alt="Sam Houston State University" /></a>
+          </div>
+          <div class="small-12 medium-9 large-8 columns">
+            <div class="row">
+              <div class="small-12 columns show-for-medium-up">
+                <ul id="top-right-calltoactions">
+                  <li><a href="//www.shsu.edu/dept/university-advancement/giving.html" title="Give to SHSU"><i class="icon-gift adjust"></i>Give to SHSU</a></li>
+                  <li><a href="//www.shsu.edu/mysammypage/" target="_blank" title="Request info from SHSU"><i class="fi-info"></i>Request Info</a></li>
+                  <li><a href="//www.shsu.edu/dept/visitors/index.html" title="Visit SHSU"><i class="fi-marker"></i>Visit</a></li>
+                  <li><a href="//www.shsu.edu/admissions/apply-texas.html" title="Apply to SHSU"><i class="fi-check"></i>Apply</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-3 small-offset-3 columns show-for-large-up" id="campus-tools-box">
+                <form class="campus-tools">
+                  <label><span class="hide">Campus Tools</span>
+                    <select onchange="if (this.value) window.location.href=this.value" title="Campus tools">
+                      <option disabled="" selected="selected">Campus Tools</option>
+                      <option value="//blackboard.shsu.edu/webapps/login/" onclick="_gaq.push(['_trackEvent','Blackboard','Login to Blackboard','Campus Tools - SHSU Main Header',undefined,true]);">Blackboard</option><option value="https://mail.shsu.edu/owa" onclick="_gaq.push(['_trackEvent','E-mail','E-mail','Campus Tools - SHSU Main Header',undefined,true]);">E-Mail</option><option value="https://mysam.shsu.edu/" onclick="_gaq.push(['_trackEvent','My Sam','My Sam','Campus Tools - SHSU Main Header',undefined,true]);">My Sam</option><option value="https://samweb.shsu.edu/" onclick="_gaq.push(['_trackEvent','SamWeb','SamWeb','Campus Tools - SHSU Main Header',undefined,true]);">SamWeb</option><option value="//distance.shsu.edu/">SHSU Online</option>
+                    </select>
+                  </label>
+                </form>
+              </div>
+              <div class="small-3 columns show-for-large-up" id="fast-links-box">
 
-    var data = { "events": [{ "event": { "event_instances": [{ "event_instance": { "id": 1365392, "ranking": 0, "event_id": 460956, "start": "2015-08-20T00:00:00-05:00", "end": null, "all_day": true}}], "id": 460956, "title": "Blue Star Museums", "url": "http://www.samhoustonmemorialmuseum.com/", "updated_at": "2015-08-20T05:43:51-05:00", "created_at": "2015-06-02T12:34:01-05:00", "facebook_id": null, "first_date": "2015-06-02", "last_date": "2015-09-06", "hashtag": null, "urlname": "blue_star_museums_5651", "user_id": 162486, "directions": "", "allows_reviews": true, "location": "Sam Houston Memorial Museum", "room_number": "", "location_name": "Sam Houston Memorial Museum", "created_by": null, "updated_by": 198221, "city_id": null, "neighborhood_id": null, "school_id": 113, "campus_id": null, "recurring": true, "free": true, "private": false, "verified": true, "rejected": false, "sponsored": false, "venue_id": null, "ticket_url": "", "ticket_cost": "", "keywords": [], "tags": [], "description_text": "The Sam Houston Memorial Museum is proud to be a part of Blue Star Museums, a national appreciation program to thank our military families for their service and share with them America's cultural treasures.  Blue Star Museums is a collaboration amonth the National Endowment for the Arts, Blue Star Families, the Department of Defense, and more than 2,000 museums across America to offer free admission to the nation's active duty military personnel, including National Guard and Reserve, and up to five family members.  This program runs Memorial Day to Labor Day.", "photo_id": 280257, "detail_views": 3264, "address": "1836 Sam Houston Ave., Huntsville, Texas, 77340", "description": "<p>The Sam Houston Memorial Museum is proud to be a part of Blue Star Museums, a national appreciation program to thank our military families for their service and share with them America&#39;s cultural treasures.&nbsp; Blue Star Museums is a collaboration amonth the National Endowment for the Arts, Blue Star Families, the Department of Defense, and more than 2,000 museums across America to offer free admission to the nation&#39;s active duty military personnel, including National Guard and Reserve, and up to five family members.&nbsp; This program runs Memorial Day to Labor Day.</p>\r\n", "featured": false, "geo": { "latitude": "30.71488", "longitude": "-95.551332", "street": "1836 Sam Houston Avenue", "city": "Huntsville", "state": "TX", "country": "US", "zip": "77340" }, "filters": { "departments": [{ "name": "Museum", "id": 37157}], "event_types": [{ "name": "Open to the Public", "id": 37311}] }, "custom_fields": {}, "localist_url": "https://events.shsu.edu/event/blue_star_museums_5651", "photo_url": "https://d3e1o4bcbhmj8g.cloudfront.net/photos/280257/huge/e22c5fb0dbfb98e2e492ffe239f78fc3d8948cb7.jpg", "venue_url": null} }, { "event": { "event_instances": [{ "event_instance": { "id": 1146252, "ranking": 0, "event_id": 403871, "start": "2015-08-20T06:00:00-05:00", "end": "2015-08-20T17:00:00-05:00", "all_day": false}}], "id": 403871, "title": "TRIES Analytical Lab Testing ", "url": "", "updated_at": "2015-08-20T05:02:50-05:00", "created_at": "2015-02-20T10:45:45-06:00", "facebook_id": null, "first_date": "2015-02-23", "last_date": "2015-08-31", "hashtag": "", "urlname": "tries_analytical_lab_testing_event", "user_id": 164486, "directions": "", "allows_reviews": true, "location": "TRIES Analytical Laboratory", "room_number": "Sam South Room 177D", "location_name": "TRIES Analytical Laboratory", "created_by": 78170, "updated_by": 78170, "city_id": null, "neighborhood_id": null, "school_id": 113, "campus_id": null, "recurring": true, "free": true, "private": false, "verified": true, "rejected": false, "sponsored": false, "venue_id": null, "ticket_url": "", "ticket_cost": "", "keywords": [], "tags": [], "description_text": "The TRIES Analytical lab is having a buy one test get one for 1/2 price event. The sponsored tests are soil 1/home gardener ($10), soil 2 ($15), well water ($30), home water ($30), basic gas drilling ($175), forage 1 ($15) and forage 2 ($25). Contact us at 936-294-3979.", "photo_id": null, "detail_views": 6605, "address": "2424 Sam Houston Ave Huntsville, TX 77340", "description": "<p>The TRIES Analytical lab is having a buy one test get one for 1/2 price event. The sponsored tests are soil 1/home gardener ($10), soil 2 ($15), well water ($30), home water ($30), basic gas drilling ($175), forage 1 ($15)&nbsp;and forage 2 ($25). Contact us at 936-294-3979.</p>\r\n", "featured": false, "geo": { "latitude": "30.706257", "longitude": "-95.547173", "street": "2424 Sam Houston Avenue", "city": "Huntsville", "state": "TX", "country": "US", "zip": "77340" }, "filters": { "departments": [{ "name": "TRIES", "id": 37209}], "event_types": [{ "name": "Open to the Public", "id": 37311}] }, "custom_fields": {}, "localist_url": "https://events.shsu.edu/event/tries_analytical_lab_testing_event", "photo_url": "https://d3e1o4bcbhmj8g.cloudfront.net/assets/main/business_huge-18aa15a22f893e437c2e1baaead28fc2.png", "venue_url": null} }, { "event": { "event_instances": [{ "event_instance": { "id": 1442371, "ranking": 0, "event_id": 483186, "start": "2015-08-20T09:00:00-05:00", "end": "2015-08-20T16:30:00-05:00", "all_day": false}}], "id": 483186, "title": "\"Stories in Stitches:  A Collection of Quilts by Helen Belcher\"", "url": "www.samhoustonmemorialmuseum.com", "updated_at": "2015-08-20T06:11:21-05:00", "created_at": "2015-07-22T15:23:13-05:00", "facebook_id": null, "first_date": "2015-08-04", "last_date": "2015-10-11", "hashtag": "", "urlname": "stories_in_stitches_a_collection_of_quilts_by_helen_belcher_6215", "user_id": 162486, "directions": "", "allows_reviews": true, "location": "Katy & E. Don Walker, Sr. Education Center", "room_number": "Exhibit Gallery", "location_name": "Katy & E. Don Walker, Sr. Education Center", "created_by": 162486, "updated_by": 152465, "city_id": null, "neighborhood_id": null, "school_id": 113, "campus_id": null, "recurring": true, "free": true, "private": false, "verified": true, "rejected": false, "sponsored": false, "venue_id": null, "ticket_url": "", "ticket_cost": "", "keywords": [], "tags": [], "description_text": "Aug. 4 through Oct. 11 in the Katy and E. Don Walker Sr. Education Center, Helen Belcher, curator of education at the Sam Houston Memorial Museum, will showcase some of the quilts she has completed over the years, along with the stories behind each quilt.\n\nBelcher's passion for quilting has led her to become a member of the Tall Pines Quilt Guild, and she has won numerous awards at different quilt shows.", "photo_id": 292842, "detail_views": 2008, "address": "1402 19th Street, Huntsville, Texas 77340", "description": "<p>Aug. 4 through Oct.&nbsp;11 in the Katy and E. Don Walker&nbsp;Sr.&nbsp;Education Center,&nbsp;Helen Belcher, curator of education at the Sam Houston Memorial Museum, will&nbsp;showcase&nbsp;some of the quilts she has completed over the years, along with the stories behind each quilt.</p>\r\n\r\n<p>Belcher&#39;s passion for quilting has led her to become&nbsp;a member of the Tall Pines Quilt Guild, and she has won numerous awards at different quilt shows.&nbsp;</p>\r\n", "featured": false, "geo": { "latitude": "30.71412", "longitude": "-95.55468", "street": "1402 19th Street", "city": "Huntsville", "state": "TX", "country": "US", "zip": "77340" }, "filters": { "departments": [{ "name": "Museum", "id": 37157}], "event_types": [{ "name": "Arts, Entertainment & Performances", "id": 37280 }, { "name": "Exhibit", "id": 37287 }, { "name": "Open to the Public", "id": 37311}] }, "custom_fields": {}, "localist_url": "https://events.shsu.edu/event/stories_in_stitches_a_collection_of_quilts_by_helen_belcher_6215", "photo_url": "https://d3e1o4bcbhmj8g.cloudfront.net/photos/292842/huge/3d0ff972098f1a093e8cd5cf04a0bef8736f76b7.jpg", "venue_url": null} }, { "event": { "event_instances": [{ "event_instance": { "id": 1365498, "ranking": 0, "event_id": 460987, "start": "2015-08-20T10:00:00-05:00", "end": "2015-08-20T14:00:00-05:00", "all_day": false}}], "id": 460987, "title": "Sam Houston Memorial Museum Complex Guided Tours", "url": "http://www.samhoustonmemorialmuseum.com/", "updated_at": "2015-08-20T05:43:53-05:00", "created_at": "2015-06-02T13:18:22-05:00", "facebook_id": null, "first_date": "2015-06-09", "last_date": "2015-08-28", "hashtag": null, "urlname": "sam_houston_memorial_museum_complex_guided_tours", "user_id": 162486, "directions": "", "allows_reviews": true, "location": "Sam Houston Memorial Museum", "room_number": "Katy & E. Don Walker, Sr. Education Center", "location_name": "Sam Houston Memorial Museum", "created_by": null, "updated_by": null, "city_id": null, "neighborhood_id": null, "school_id": 113, "campus_id": null, "recurring": true, "free": true, "private": false, "verified": true, "rejected": false, "sponsored": false, "venue_id": null, "ticket_url": "", "ticket_cost": "", "keywords": [], "tags": [], "description_text": "From June 9 to August 28 the Sam Houston Memorial Museum offers guided tours Tuesday thru Friday at 10:00 a.m. or 2:00 p.m.  The tour begins at our Katy & E. Don Walker, Sr. Education Center with a short introductory video, then moves out to the historic grounds, and ends at the Main Museum.  The tour is included in your admission donation.  For these summertime tours, groups of all ages and sizes are welcome, though reservations are highly encouraged.  The Museum Education Department can be contacted at (936) 294-3153 for more information or to set up a reservation.", "photo_id": 280269, "detail_views": 3457, "address": "1402 19th Street, Huntsville, Texas, 77340", "description": "<p>From June 9 to August 28 the Sam Houston Memorial Museum offers guided tours Tuesday thru Friday at 10:00 a.m. or 2:00 p.m.&nbsp; The tour begins at our Katy &amp; E. Don Walker, Sr. Education Center with a short introductory video, then moves out to the historic grounds, and ends at the Main Museum.&nbsp; The tour is included in your admission donation.&nbsp; For these summertime tours, groups of all ages and sizes are welcome, though reservations are highly encouraged.&nbsp; The Museum Education Department can be contacted at <span class=\"baec5a81-e4d6-4674-97f3-e9220f0136c1\" style=\"white-space:nowrap\">(936) 294-3153<a href=\"#\" style=\"margin: 0px; border: currentColor; left: 0px; top: 0px; width: 16px; height: 16px; right: 0px; bottom: 0px; overflow: hidden; vertical-align: middle; float: none; display: inline; white-space: nowrap; position: static !important;\" title=\"Call: (936) 294-3153\"><img src=\"data:image/png;base64,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\" style=\"margin: 0px; border: currentColor; left: 0px; top: 0px; width: 16px; height: 16px; right: 0px; bottom: 0px; overflow: hidden; vertical-align: middle; float: none; display: inline; white-space: nowrap; position: static !important;\" title=\"Call: (936) 294-3153\" /></a></span> for more information or to set up a reservation.</p>\r\n", "featured": false, "geo": { "latitude": "30.71412", "longitude": "-95.55468", "street": "1402 19th Street", "city": "Huntsville", "state": "TX", "country": "US", "zip": "77340" }, "filters": { "departments": [{ "name": "Museum", "id": 37157}], "event_types": [{ "name": "Open to the Public", "id": 37311}] }, "custom_fields": {}, "localist_url": "https://events.shsu.edu/event/sam_houston_memorial_museum_complex_guided_tours", "photo_url": "https://d3e1o4bcbhmj8g.cloudfront.net/photos/280269/huge/4de34d73d28ba3c94ca373237dbc92062894bae7.jpg", "venue_url": null} }, { "event": { "event_instances": [{ "event_instance": { "id": 1388192, "ranking": 0, "event_id": 467961, "start": "2015-08-20T10:00:00-05:00", "end": "2015-08-20T14:00:00-05:00", "all_day": false}}], "id": 467961, "title": "SHSU Campus Tours", "url": "http://www.shsu.edu/dept/visitors/index.html", "updated_at": "2015-08-20T05:49:18-05:00", "created_at": "2015-06-16T10:00:41-05:00", "facebook_id": null, "first_date": "2015-06-16", "last_date": "2015-12-31", "hashtag": "VisitSHSU", "urlname": "shsu_campus_tours", "user_id": 156038, "directions": "", "allows_reviews": true, "location": "John R. Ragsdale Visitor and Alumni Center", "room_number": "", "location_name": "John R. Ragsdale Visitor and Alumni Center", "created_by": 156038, "updated_by": 198117, "city_id": null, "neighborhood_id": null, "school_id": 113, "campus_id": null, "recurring": true, "free": true, "private": false, "verified": true, "rejected": false, "sponsored": false, "venue_id": null, "ticket_url": "", "ticket_cost": "", "keywords": [], "tags": [], "description_text": "Daily tours are offered at the John R. Ragsdale Visitor and Alumni Center Monday - Friday at 10AM, 12PM and 2PM. The tour includes a general presentation about SHSU providing information regarding costs, admission requirements, housing, etc. followed by a video presentation and a walking tour of campus led by a student ambassador. Approximate duration: 2 hours.\n\nPlease be sure to register for the event online or by calling 1-866-BEARKATS.", "photo_id": 283358, "detail_views": 2743, "address": "", "description": "<p><span style=\"font-size:14px\">Daily tours are offered at the John R. Ragsdale Visitor and Alumni Center Monday - Friday&nbsp;at 10AM, 12PM and 2PM. The tour includes a general presentation about SHSU providing information regarding costs, admission requirements, housing, etc. followed by a video presentation and a walking tour of campus led by a student ambassador. Approximate duration: 2 hours.</span></p>\r\n\r\n<p><span style=\"font-size:14px\">Please be sure to register for the event online or by calling 1-866-BEARKATS.</span></p>\r\n", "featured": false, "geo": { "latitude": null, "longitude": null, "street": null, "city": null, "state": null, "country": null, "zip": null }, "filters": { "departments": [{ "name": "Visitor Center", "id": 37218}], "event_types": [{ "name": "Information Session/Tour", "id": 37303}] }, "custom_fields": {}, "localist_url": "https://events.shsu.edu/event/shsu_campus_tours", "photo_url": "https://d3e1o4bcbhmj8g.cloudfront.net/photos/283358/huge/caa51d1e6ee95f4d696e1b3feac11b3943a003fa.jpg", "venue_url": null}}], "page": { "current": 1, "size": 10, "total": 1 }, "date": { "first": "2015-08-20", "last": "2015-08-21"} };
 
-    $("#lclst_widget_footer").hide();
-    $(".lwe").hide();
-    $(".submit").click(function () {
-        if ($("#Semester").find(":selected").text() === "Fall" && $("#Year")
-        .find(":selected").text() === "2015") {
-            rep = "Fall 2015 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Fall" && $(
-        "#Year").find(":selected").text() === "2016") {
-            rep = "Fall 2016 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Fall" && $(
-        "#Year").find(":selected").text() === "2017") {
-            rep = "Fall 2017 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2015") {
-            rep = "Spring 2015 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2016") {
-            rep = "Spring 2016 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Spring" && $("#Year").find(":selected").text() === "2017") {
-            rep = "Spring 2017 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Summer" && $("#Year").find(":selected").text() === "2015") {
-            rep = "Summer 2015 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Summer" && $("#Year").find(":selected").text() === "2016") {
-            rep = "Summer 2016 Semester";
-            $(".semester-header").html(rep);
-        } else if ($("#Semester").find(":selected").text() === "Summer" && $("#Year").find(":selected").text() === "2017") {
-            rep = "Summer 2017 Semester";
-            $(".semester-header").html(rep);
-        }
-        for (i = 0; i <= 6; i++) {
+   		<form class="campus-tools">
+  <label><span class="hide">Fast Links</span>
+    <select onchange="if (this.value) window.location.href=this.value" title="Fast Links">
+      <option disabled="" selected="selected">Fast Links</option>
+      <option value="//www.shsu.edu/dept/academic-affairs/">Academic Affairs</option>
+      <option value="//www.shsu.edu/~reg_www/academic_calendar/">Academic Calendar</option>
+      <option value="//www.shsu.edu/academics/ace/">Academic Community Engagement (ACE)</option>
+      <option value="//www.shsu.edu/dept/academic-planning-and-assessment/index.html">Academic Planning and Assessment</option>
+      <option value="//www.shsu.edu/centers/academic-success-center/">Academic Success Center</option>
+      <option value="//www.shsu.edu/admissions/accepted.html">Accepted Students</option>
+      <option value="//www.shsu.edu/admissions/undergraduate/index.html">Admissions (Undergraduate)</option>
+      <option value="//www.shsu.edu/dept/graduate-admissions/transition.html">Admissions (Graduate)</option>
+      <option value="//www.shsu.edu/catalog/admission2.html">Admission Requirements</option>
+      <option value="//www.shsu.edu/academics/health-sciences/medical-and-allied-health/">Advising (Nursing/Medical/Dental)</option>
+      <option value="//www.shsu.edu/centers/sam-center/">Advising (SAM Center)</option>
+      <option value="//www.shsu.edu/academics/agricultural-sciences-and-engineering-technology/">Agricultural Sciences and Engineering Technology</option>
+      <option value="//www.shsu.edu/dept/office-of-alumni-relations/">Alumni Association</option>
+      <option value="//www.shsu.edu/dept/adai/">Alcohol and Drug Abuse Initiative</option>
+      <option value="//www.shsu.edu/dept/aaup/">American Association of University Professors</option>
+      <option value="//www.shsu.edu/~tries_www/alabhome.html">Analytical Laboratory</option>
+      <option value="//www.shsu.edu/admissions/apply-texas.html">Application for Admission</option>
+      <option value="//www.shsu.edu/academics/military-science/">Army ROTC - Military Science</option>
+      <option value="//www.gobearkats.com/">Athletics</option>
+      <option value="//www.shsu.edu/academics/banking/">Banking</option>
+      <option value="//www.shsu.edu/~ERP/">Banner</option>
+      <option value="//www.shsu.edu/dept/recreational-sports/bearkatcamp/">Bearkat Camp</option>
+      <option value="https://samweb.shsu.edu/food01wp/">Bearkat Express Payment</option>
+      <option value="//www.shsu.edu/~org_bmb/">Bearkat Marching Band</option>
+      <option value="//www.shsu.edu/onecard/">Bearkat OneCard</option>
+      <option value="//www.shsu.edu/dept/financial-aid/scholarships/transfer.html">Bearkat Transfer Scholarship</option>
+      <option value="//blackboard.shsu.edu/webapps/login/">Blackboard</option>
+      <option value="//www.shsu.edu/blinn/">Blinn College Transfers</option>
+      <option value="//shsu.bncollege.com">Bookstore</option>
+      <option value="//ww2.shsu.edu/book01wp/">Books & Supplies</option>
+      <option value="//www.shsu.edu/dept/budget/">Budget Office</option>
+        <option value="//www.shsu.edu/dept/bursar/">Bursar's Office</option>
+      <option value="//www.shsu.edu/academics/business-administration/">Business Administration</option>
+      <option value="//www.shsu.edu/events/" title="Campus Events and Calendars">Calendars</option>
+      <option value="//www.shsu.edu/map/">Campus Map</option>
+      <option value="//www.shsu.edu/dept/career-services/">Career Services</option>
+      <option value="//www.shsu.edu/catalog/">Catalogs</option>
+      <option value="//www.shsu.edu/academics/current-schedule-of-classes.html">Class Schedule</option>
+      <option value="//ww2.shsu.edu/legacy/Activation">Computer Account Creation</option>
+      <option value="//www.shsu.edu/dept/it@sam/services/lab-classroom-services/computerlabs.html">Computer Labs</option>
+        <option value="//www.shsu.edu/academics/continuing-education/">Continuing Education</option>
+      <option value="//www.shsu.edu/dept/controller/">Controller's Office</option>
+        <option value="//www.shsu.edu/academics/correspondence/">Correspondence Course Division</option>
+      <option value="//www.shsu.edu/counseling/">Counseling Center</option>
+      <option value="//www.cjcenter.org/">Criminal Justice</option>
+      <option value="//www.shsu.edu/students/">Current Students</option>
+      <option value="//www.shsu.edu/dept/dean-of-students/">Dean of Students' Office</option>
+      <option value="//www.shsu.edu/dept/">Departments</option>
+      <option value="//www.shsu.edu/~dnc_www/">Department of Dance</option>
+      <option value="//www.shsu.campusdish.com/">Dining Services</option>
+      <option value="//www.shsu.edu/directory/">Directory</option>
+      <option value="//www.shsu.edu/academics/education/">Education</option>
+      <option value="//www.shsu.edu/academics/education/educator-preparation-services/">Educator Preparation Services</option>
+      <option value="//www.shsu.edu/dept/human-resources/risk-management/">Emergency Management</option>
+      <option value="//www.shsu.edu/dept/human-resources/employment/">Employment Opportunities</option>
+      <option value="//www.shsu.edu/dept/international-programs/english-language-institute/">English Language Institute</option>
+      <option value="//www.shsu.edu/enrollment/">Enrollment Management</option>
+      <option value="//www.shsu.edu/safety/">Environmental, Health and Safety Office</option>
+        <option value="https://mail.shsu.edu/">Exchange Mail</option>
+      <option value="//www.shsu.edu/dept/facilities-management/">Facilities Management</option>
+      <option value="//www.shsu.edu/facilities-space-management/">Facilities Space Management</option>
+      <option value="//www.shsu.edu/dept/faculty-senate/">Faculty Senate</option>
+      <option value="https://samweb.shsu.edu/pics03wp/">Faculty/Staff Directory</option>
+      <option value="//www.shsu.edu/dept/registrar/calendars/final-exam-schedules.html">Final Exam Schedule</option>
+      <option value="//www.shsu.edu/dept/finance-and-operations/">Finance and Operations</option>
+      <option value="//www.shsu.edu/dept/financial-aid/">Financial Aid</option>
+      <option value="//www.shsu.edu/dept/avp-financial-services/">Financial Services</option>
+      <option value="//www.shsu.edu/academics/fine-arts-and-mass-communication/">Fine Arts and Mass Communication</option>
+      <option value="//www.shsu.edu/dept/fye/">First-Year Experience</option>
+      <option value="//www.shsu.edu/about/facts.html">General Information</option>
+         <option value="//www.shsu.edu/dept/graduate-admissions">Graduate Admissions</option>
+      <option value="//www.shsu.edu/dept/graduate-studies/">Graduate Studies</option>
+      <option value="//www.shsu.edu/greatnames">Great Names</option>
+      <option value="//www.shsu.edu/academics/health-sciences/">Health Sciences</option>
+      <option value="//www.shsu.edu/academics/honors/">Honors College</option>
+      <option value="//www.shsu.edu/homecoming/">Homecoming</option>
+      <option value="//www.shsu.edu/hr/">Human Resources</option>
+      <option value="//www.shsu.edu/academics/humanities-and-social-sciences/">Humanities and Social Sciences</option>
+      <option value="//www.shsu.edu/it@sam/">IT@Sam</option>
+      <option value="//www.shsu.edu/dept/client-services/service-desk.html">IT@Sam Service Desk</option>
+      <option value="//www.shsu.edu/dept/office-of-research-and-sponsored-programs/compliance/iacuc/index.html">Institutional Animal Care & Use Committee (IACUC)</option>
+      <option value="//www.shsu.edu/dept/institutional-effectiveness/">Institutional Effectiveness</option>
+      <option value="//www.shsu.edu/dept/office-of-research-and-sponsored-programs/internal-grant-program/">Internal Grant Program</option>
+      <option value="//www.shsu.edu/dept/office-of-research-and-sponsored-programs/compliance/irb/">Institutional Review Board (IRB)</option>
+      <option value="//www.shsu.edu/dept/international-programs/">International Programs</option>
+      <option value="//www.shsu.edu/joint/">Joint Admission Students</option>
+      <option value="//www.shsu.edu/about/facts.html">KatFacts</option>
+      <option value="//www.shsu.edu/dept/leadership/">Leadership Academy</option>
 
-            /*
-            *    FALL SEM FOR ALL YEARS
-            */
-            if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall" && 
-                                                    (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find(":selected").text() === "2015")) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
-                    $(".lwe").hide();
+        <option value="//www.shsu.edu/centers/leap/">LEAP Center</option>
+
+      <option value="//library.shsu.edu/">Library (NGL)</option>
+      <option value="//www.shsu.edu/lonestarcollege/">Lone Star College Transfers</option>
+      <option value="//www.shsu.edu/dept/lowman-student-center/">Lowman Student Center</option>
+      <option value="//www.shsu.edu/dept/mail-services/">Mail Services</option>
+      <option value="//www.shsu.edu/map/">Map - Campus</option>
+      <option value="//www.shsu.edu/dept/marketing/">Marketing & Communications</option>
+      <option value="//www.shsu.edu/academics/mathematics-and-statistics/camp/">Math CAMP</option>
+      <option value="//www.shsu.edu/academics/health-sciences/medical-and-allied-health/">Medical & Allied Health Programs</option>
+      <option value="//www.shsu.edu/mcnair-scholars-program/">McNair Program</option>
+      <option value="//www.shsu.edu/academics/military-science/">Military Science</option>
+      <option value="//www.shsu.edu/enrollment/gocenter/">Mobile Go Center</option>
+      <option value="//www.shsu.edu/academics/music/">Music</option>
+      <option value="//www.shsu.edu/academics/music/">Music Choir</option>
+      <option value="//www.shsu.edu/today@sam/">News</option>
+      <option value="//www.shsu.edu/academics/nursing/">Nursing</option>
+      <option value="//www.shsu.edu/dept/office-of-the-president/">Office of the President</option>
+      <option value="//www.shsu.edu/mysammypage/">Online Information Request</option>
+      <option value="//www.shsu.edu/dotAsset/4d573a38-fe42-45b0-ad39-5a7ea96d4fd5">Organization Chart</option>
+      <option value="//www.shsu.edu/enrollment/orientation/">Orientation - New Student</option>
+      <option value="//www.shsu.edu/pace/">PACE</option>
+      <option value="//www.shsu.edu/dept/dean-of-students/parent-relations-office/">Parent Relations Office</option>
+      <option value="//www.shsu.edu/dept/public-safety/parktrans/">Parking</option>
+      <option value="//www.shsu.edu/dept/payroll/">Payroll Office</option>
+      <option value="//www.shsu.edu/pga">PGA Golf Management</option>
+      <option value="//www.shsu.edu/dept/procurement/">Procurement and Business Services</option>
+      <option value="//www.shsu.edu/~pur_www/wca/">Procurement Opportunities</option>
+      <option value="//www.shsu.edu/~org_connect/">Project Connect</option>
+      <option value="//www.shsu.edu/dept/property/">Property</option>
+      <option value="//www.shsu.edu/admissions/">Prospective Students</option>
+      <option value="//www.shsu.edu/~qep/">Quality Enhancement Plan</option>
+      <option value="//www.shsu.edu/dept/reading-center/">Reading Center</option>
+      <option value="//www.shsu.edu/dept/recreational-sports/">Recreational Sports</option>
+      <option value="//www.shsu.edu/dept/registrar/students/registration/how-to.html">Registration</option>
+        <option value="//www.shsu.edu/dept/registrar/">Registrar's Office</option>
+      <option value="//www.shsu.edu/dept/research-admin/">Research Administration (Post-Award)</option>
+      <option value="//www.shsu.edu/dept/office-of-research-and-sponsored-programs/">Research and Sponsored Programs</option>
+      <option value="//www.shsu.edu/dept/residence-life/">Residence Life</option>
+      <option value="//www.shsu.edu/dept/human-resources/risk-management/">Risk Management</option>
+
+         <option value="//www.shsu.edu/sacs5thyear">SACSCOC Fifth Year Interim Report</option>
+      <option value="//www.shsu.edu/sacs/">SACS Reaffirmation</option>
+      <option value="//samhoustonmemorialmuseum.com">Sam Houston Memorial Museum</option>
+      <option value="//www.shsu.edu/faculty/menu.html">SamMenu (Download)</option>
+      <option value="https://samweb.shsu.edu/">SamWeb</option>
+      <option value="//www.shsu.edu/academics/sciences">Sciences</option>
+      <option value="//www.shsu.edu/disability">Services for Students with Disabilities</option>
+      <option value="//www.shsu.edu/academics/current-schedule-of-classes.html">Schedule of Classes</option>
+      <option value="//www.shsu.edu/dept/financial-aid/scholarships/">Scholarships</option>
+      <option value="https://secure.touchnet.com/C21329_ustores/web/index.jsp">SHSU MarketPlace</option>
+      <option value="//distance.shsu.edu/">SHSU Online</option>
+      <option value="//www.shsu.edu/dept/student-activities/spirit-programs/">Spirit Programs</option>
+      <option value="//www.shsu.edu/academics/banking/">Smith-Hutson Endowed Chair of Banking</option>
+      <option value="//www.shsu.edu/smith-hutson/">Smith-Hutson Scholarship Program</option>
+      <option value="//www.shsu.edu/dept/staff-council">Staff Council</option>
+      <option value="//www.shsu.edu/dept/student-activities/">Student Activities</option>
+      <option value="//www.shsu.edu/~org_sga/">Student Government Association</option>
+      <option value="//www.shsu.edu/dept/student-health-center/">Student Health Center</option>
+      <option value="//www.shsu.edu/dept/student-services/legal/">Student Legal Services</option>
+      <option value="//www.shsu.edu/dept/smmc/">Student Money Management Center</option>
+      <option value="//www.shsu.edu/dept/student-services/">Student Services</option>
+      <option value="//www.shsu.edu/calendar/">Student Services Calendar</option>
+      <option value="//www.shsu.edu/dept/summercamps/">Summer Camps</option>
+
+        <option value="//www.shsu.edu/centers/academic-success-center/Supplemental-Instruction/">Supplemental Instruction</option>
+
+      <option value="//www.shsu.edu/guides">Technology Tutorials</option>
+      <option value="//www.shsu.edu/~tst_www/">Testing Center</option>
+      <option value="//www.shsu.edu/academics/theatre/">Theatre and Musical Theatre</option>
+      <option value="//www.shsu.edu/today@sam/">Today@Sam</option>
+      <option value="//www.shsu.edu/dept/visitors/tour.html">Tour the University</option>
+      <option value="//www.shsu.edu/dept/registrar/transcripts-and-student-records/">Transcripts</option>
+      <option value="//ww2.shsu.edu/regr27wp/">Transfer Equivalency Guide</option>
+      <option value="//www.shsu.edu/prospects/transfer/">Transfer Students (Articulation)</option>
+      <option value="//www.shsu.edu/dept/tries/">TRIES</option>
+      <option value="//www.shsu.edu/dept/university-advancement/">University Advancement</option>
+      <option value="//www.shsuhotel.org/">University Hotel</option>
+      <option value="//www.shsu.edu/dept/public-safety/">University Police Department</option>
+      <option value="//www.shsu.edu/dept/veterans-resource-center/">Veterans</option>
+      <option value="//www.shsu.edu/dept/visitors/">Visitor & Alumni Center</option>
+      <option value="//www.shsu.edu/woodlands/">The Woodlands Center</option>
+    </select>
+  </label>
+</form>
+
+
+              </div>
+              <div class="small-12 medium-6 large-3 columns show-for-medium-up" id="search-box">
+                <label><span class="hide">Search</span>
+                  <form action="https://search.shsu.edu/search" class="campus-search">
+                    <input type="hidden" name="proxystylesheet" value="default_frontend">
+                    <input type="hidden" name="client" value="default_frontend">
+                    <input type="text" placeholder="Search" title="Search" name="q" size="25" value="Search" id="q" onclick="this.value=''">
+                  </form>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+       <nav id="shsu-nav">
+          		    		<div class="row">
+          <div id="shsu-mobile-nav" class="hide-for-large-up">
+            <a href="#" class="left-off-canvas-toggle"><i class="fi-list"></i> <span>Menu</span></a>
+          </div>
+          <div id="top-menu-campus-tools-box-wrapper" class="hide" >
+          </div>
+          <div id="top-menu-fastlinks-box-wrapper" class="hide" >
+          </div>
+          <div id="shsu-main-nav" class="large-12 columns show-for-large-up">
+            <ul>
+              <li><span><a href="//www.shsu.edu/get-started/">Getting Started</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.shsu.edu/get-started/">Become A Student</a></li>
+                  <li><a href="//www.shsu.edu/admissions/apply-texas.html">Apply Now</a></li>
+                  <li><a href="//www.shsu.edu/~visitor/">Visit SHSU</a></li>
+                  <li><a href="//www.shsu.edu/mysammypage/">Request Information</a></li>
+                  <li><a href="//www.shsu.edu/catalog/">Catalog</a></li>
+                  <li><a href="//www.shsu.edu/academics/current-schedule-of-classes.html" target="_blank">Classes</a></li>
+                </ul>
+              </li>
+              <li><span><a href="//www.shsu.edu/academics">Majors & Programs</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.shsu.edu/academics/degrees.html?degTyp=bach">Bachelor's Degrees</a></li>
+                  <li><a href="//www.shsu.edu/academics/degrees.html?degTyp=mast">Master's Degrees</a></li>
+                  <li><a href="//www.shsu.edu/academics/degrees.html?degTyp=doc">Doctoral Degrees</a></li>
+                  <li><a href="//distance.shsu.edu/home/programs.html">Degrees Online</a></li>
+                  <li><a href="//www.shsu.edu/academics/colleges.html">SHSU Colleges</a></li>
+                </ul>
+              </li>
+              <li><span><a href="//www.shsu.edu/admissions/">Admissions</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.shsu.edu/admissions/undergraduate">Undergraduate Students</a></li>
+                  <li><a href="//www.shsu.edu/admissions/transfer/">Transfer Students</a></li>
+                  <li><a href="//www.shsu.edu/dept/graduate-admissions/">Graduate Students</a></li>
+                  <li><a href="//distance.shsu.edu/home/programs.html">Online Students</a></li>
+                  <li><a href="//www.shsu.edu/admissions/international/">International Students</a></li>
+                  <li><a href="//ww2.shsu.edu/admn04wp/">Check Your Status</a></li>
+                  <li><a href="//www.shsu.edu/admissions/cost.html">Tuition & Cost</a></li>
+                </ul>
+              </li>
+              <li><span><a href="//www.shsu.edu/campus_life">Campus Life & Culture</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.shsu.edu/~hou_www/">Residence Life (Housing)</a></li>
+                  <li><a href="//www.shsu.edu/dept/recreational-sports/">Recreational Sports</a></li>
+                  <li><a href="//www.shsu.edu/campus_life/calendars.html" title="Campus Life Calendars">Calendars</a></li>
+                  <li><a href="//www.shsu.edu/dept/dean-of-students/greeklife/">Greek Life</a></li>
+                  <li><a href="//www.shsu.edu/~slo_sad/v2/studentorgs/index.html">Clubs & Organizations</a></li>
+                  <li><a href="http://www.shsu.campusdish.com">Dining</a></li>
+                </ul>
+              </li>
+              <li><span><a href="//www.shsu.edu/services">Services & Resources</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.shsu.edu/~fao_www/">Financial Aid</a></li>
+                  <li><a href="//www.shsu.edu/dept/career-services/">Career Services</a></li>
+                  <li><a href="//www.shsu.edu/dept/registrar">Registrar</a></li>
+                  <li><a href="//www.shsu.edu/~sam_www/">Sam Center</a></li>
+                  <li><a href="//www.shsu.edu/onecard/">Bearkat One Services</a></li>
+                  <li><a href="http://www.shsu.edu/dept/student-health-center/">Student Health Center</a></li>
+                  <li><a href="//www.shsu.edu/dept/disability/">Disability Services</a></li>
+                </ul>
+              </li>
+              <li><span><a href="//www.gobearkats.com/" onclick="_gaq.push(['_trackEvent', 'Athletics', 'Primary Navigation']);">Athletics</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.gobearkats.com/">Athletics Website</a></li>
+                  <li><a href="//www.gobearkats.com/ViewArticle.dbml?&DB_OEM_ID=19900&ATCLID=205055607">Tickets</a></li>
+                  <li><a href="//www.gobearkats.com/ViewArticle.dbml?&DB_OEM_ID=19900&ATCLID=205057819">Donate</a></li>
+                </ul>
+              </li>
+              <li><span><a href="//www.shsu.edu/about/">About SHSU</a></span>
+                <ul class="sub-menu">
+                  <li><a href="//www.shsu.edu/alumni/">Alumni & Friends</a></li>
+                    <li><a href="//www.shsu.edu/research">Research & Recognition</a></li>
+                  <li><a href="//www.shsu.edu/intranet/policies/contacts.html">Personnel Directory</a></li>
+                  <li><a href="//www.shsu.edu/~hrd_www/employment/">Employment Opportunities</a></li>
+                  <li><a href="//www.shsu.edu/about/facts.html">KatFacts</a></li>
+                  <li><a href="//www.shsu.edu/gradcat/accreditation.html">Accreditation</a></li>
+                  <li><a href="//www.shsu.edu/about/people/">People</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div id="top-menu-subnav-wrapper" class="hide">
+          </div>
+        </div>
+
+         </nav>
+      <section id="main-content">
+        <section id="subheader">
+          <div class="row" >
+            <div class="large-12 columns">
+              <div id="breadcrumbs-box" class="show-for-medium-up">
+                <!-- Crumb Trail -->
+                				<ul><li><a href="/">Home</a></li><li><a href="/dept/">Departments</a></li><li><a href="/dept/registrar/">Registrar</a></li><li><a href="/dept/registrar/calendars/">calendars</a></li><li>Academic Calendar</li></ul>
+	                <!-- End of Crumb Trail -->
+              </div>
+              <div class="row">
+                <div class="small-12 large-8 columns end">
+                  <h1>Academic Calendar</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="row">
+          <div class="small-12 large-9 columns" role="content">
+            <article>
+
+
+
+
+	     <link href="//www.shsu.edu/styles/main2.css" rel="stylesheet" type="text/css" media="screen" />
+
+<div id="Semester-Year-Selections">
+  <form action="index.html" method="get">
+    <div class="small-4 large-4 columns hide-on-print">
+        <select id="Semester" name="Sem" style="display: inline-block">
+            <option value="Fall">Fall</option>
+            <option value="Spring" selected>Spring</option>
+            <option value="Summer">Summer</option>
+        </select>
+
+    </div>
+
+
+    <div class="small-4 large-4 columns hide-on-print">
+        <select id="Year" name="Year" style="display: inline-block">
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2015</option>
+            <option value="2016" selected>2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+        </select>
+    </div>
+
+<div class="small-4 large-4 columns hide-on-print">
+        <input class="submit button" value="Submit" type="submit" style="padding: 5px" />
+</div>
+</form>
+</div>
+<br />
+    <table class="academic-calendar-json" border="1" style="width:100%">
+        <caption class="semester-header"></caption>
+    </table>
+
+<p class="body-text">
+
+</p>
+
+<script src="academic-cal.js"></script>
+
+<style type="text/css">
+
+#event-title {
+
+    color: #292D85 !important;
+    font-family:montserrat, Helvetica, Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 16px;
+
+}
+
+#event-description {
+    font-size: 18px !important;
+  }
+
+.top {
+    font-family:montserrat-bold,Helvetica,Arial,sans-serif;
+    }
+
+tr:nth-child(odd) {
+    background-color: #EDF2FA !important;
+}
+
+caption {
+    font-size: 2em !important;
+    color: #292D85!important;
+    text-transform: uppercase;
+    font-family:montserrat-bold,Helvetica,Arial,sans-serif;
+}
+
+.academic-calendar.json {
+    border='2';
+    border-left: 1px solid #CCC !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    border-top: 1px solid #CCC !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #CCC;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-left-color: #CCC;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image-source: none;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
+td {
+    border='2';
+    border-left: 1px solid #CCC !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    border-top: 1px solid #CCC !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #CCC;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-left-color: #CCC;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image-source: none;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
+tr {
+    border='2';
+    border-left: 1px solid #CCC !important;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #CCC;
+    border-top: 1px solid #CCC !important;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #CCC;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #CCC;
+    border-right-color: #CCC;
+    border-bottom-color: #CCC;
+    border-left-color: #CCC;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image-source: none;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
+
+</style>
+
+<a href='http://www.shsu.edu/dept/registrar/calendars/academic-calendar-print.html' alt="Printer Friendly Version" class="fs1">
+  <div class="fs1" aria-hidden="true" data-icon="e"> Print </div>
+</a>
+
+               </article>
+          </div>
+
+          <div class="small-12 large-3 columns" id="shsu-right">
+            <aside>
+              <div id="shsu-side-nav" class="show-for-large-up">
+
+
+
+
+	     <ul class="sub-menu-ac">
+<li><span>Academic Calendar<br /></span>
+<ul class="sub-menu">
+<li><a href="/admissions/apply-texas.html">Apply Now</a></li>
+<li><a href="/dept/registrar/">Regisrtar's&nbsp;Office</a></li>
+<li><a href="http://www.shsu.edu">SHSU Homepage</a></li>
+<li><a href="http://www.shsu.edu/campus_life/calendars.html">Main Calendar Page</a></li>
+<li><a href="http://www.shsu.edu/catalog/">Catalogs</a></li>
+</ul>
+</li>
+</ul>
+                 </div>
+
+               </aside>
+          </div>
+        </div>
+      </section>
+      <footer id="shsu-footer">
+         		 <div id="shsu-footer-social">
+          <div class="row">
+            <div class="small-12 medium-4 large-3 columns">
+              <script type="text/javascript">
+                var user = getCookie("responsivecheck");
+                if (user == "") {
+                  document.write('<a href="#" OnClick="DisableResponsive()" class="classic-view"><i class="fi-monitor"></i> Enable Classic View</a>');
                 } else {
-                    $(".lwe").show();
-                }
-
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find(":selected").text() === "2016")) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
+                  document.write('<a href="#" OnClick="EnableResponsive()" class="classic-view"><i class="icon-mobile"></i> Disable Classic View</a>');
 
 
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('08' || '09' || '10' || '11' || '12') && $("#Semester").find(":selected").text() === "Fall" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find(":selected").text() === "2017")) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('08' || '09' || '10' || '11' || '12') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-            }
+                  document.getElementById("campus-tools-box").className = document.getElementById("campus-tools-box").className.replace('show-for-large-up','');
+                  document.getElementById("campus-tools-box").style.minWidth = "160px";
 
-            /*
-            *    SPRING SEM FOR ALL YEARS
-            */
+                  document.getElementById("fast-links-box").className = document.getElementById("fast-links-box").className.replace('show-for-large-up','');
+                  document.getElementById("fast-links-box").style.minWidth = "160px";
 
-            else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find(":selected").text() === '2015')) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find(":selected").text() === '2016')) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('01' || '02' || '03' || '04' || '05') && $("#Semester").find(":selected").text() === "Spring" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find(":selected").text() === '2017')) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('01' || '02' || '03' || '04' || '05') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-            }
+                  document.getElementById("search-box").className = document.getElementById("search-box").className.replace('show-for-medium-up','');
+                  document.getElementById("search-box").style.minWidth = "160px";
 
-            /*
-            *    SUMMER SEM FOR ALL YEARS
-            */
+                  document.getElementById("shsu-nav").style.minWidth = "1100px";
+                  document.getElementById("shsu-header").style.minWidth = "1100px";
 
-            else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2015' && $("#Year").find(":selected").text() === '2015')) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2015') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
+                  document.getElementById("shsu-main-nav").style.minWidth = "1100px";
+                  document.getElementById("shsu-main-nav").className = document.getElementById("shsu-main-nav").className.replace('show-for-large-up','');
+
+                  document.getElementById("shsu-mobile-nav").style.display = "none";
+                  document.getElementById("shsu-mobile-nav").className = document.getElementById("shsu-mobile-nav").className.replace('show-for-medium-up','');
+                  document.getElementById("shsu-mobile-nav").className = document.getElementById("shsu-mobile-nav").className.replace('hide-for-large-up','');
+                  document.getElementById("shsu-side-nav").className = document.getElementById("shsu-side-nav").className.replace('show-for-large-up','');
+                  document.getElementById("main-content").style.minWidth = "1100px";
                 }
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2016' && $("#Year").find(":selected").text() === '2016')) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2016') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-            } else if (data.events[i].event.first_date.substring(5, 7) === ('06' || '07' || '08') && $("#Semester").find(":selected").text() === "Summer" && (data.events[i].event.first_date.substring(0, 4) === '2017' && $("#Year").find(":selected").text() === '2017')) {
-                if (data.events[i].event.first_date.substring(5, 7) !== ('06' || '07' || '08') || data.events[i].event.first_date.substring(0, 4) !== '2017') {
-                    $(".lwe").hide();
-                } else {
-                    $(".lwe").show();
-                }
-            } else {
-                $(".lwe").hide();
-            }
-        }
+              </script>
+            </div>
+            <div class="medium-8 large-9 columns hide-for-small-only">
+              <ul class="inline-list right">
+                <li>Follow SHSU:</li>
+                <li><a href="http://www.facebook.com/samhoustonstate" target="_blank" title="Like SHSU Online on Facebook" class="social facebook"><i class="icon-social-facebook"></i><span class="hide">Facebook</span></a></li>
+                <li><a href="http://twitter.com/samhoustonstate" target="_blank" title="Follow SHSU Online on Twitter" class="social twitter"><i class="icon-social-twitter"></i><span class="hide">Twitter</span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCKfJV7HQ7sw23LGbBvTxQJQ" target="_blank" title="Subscribe to SHSU Online on YouTube" class="social youtube"><i class="icon-social-youtube"></i><span class="hide">YouTube</span></a></li>
+                <li><a href="http://instagram.com/samhoustonstate" target="_blank" title="Follow SHSU Online on Instagram" class="social instagram"><i class="icon-social-instagram"></i><span class="hide">Instagram</span></a></li>
+                <li><a href="http://www.linkedin.com/company/sam-houston-state-university" target="_blank" title="Join the SHSU Online LinkedIn Group" class="social linkedin"><i class="icon-social-linkedin"></i><span class="hide">LinkedIn</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="shsu-footer-menu">
+          <div class="row">
+            <div class="small-12 large-3 columns">
+              <div class="small-12 medium-2 large-12 columns">
+                <a href="//www.shsu.edu/"><img src="http://www.shsu.edu/global/images/responsive/sam-houston-state-university.png" alt="Sam Houston State University Official Badge" id="footer-logo"></a>
+              </div>
+              <div class="small-12 medium-10 large-12 columns">
+                <p><strong>Sam Houston State University</strong></p>
+                <p>Huntsville, Texas 77341<br> (936) 294-1111 | (866) BEARKAT</p>
+                <p><strong>© Copyright Sam Houston State University.</strong> All rights reserved.</p>
+              </div>
+            </div>
+            <div class="small-12 large-3 columns show-for-large-up">
+              <ul class="side-nav">
+                <li class="heading">Maps & Contacts</li>
+                <li><a href="//www.shsu.edu/map">Campus Map</a></li>
+                <li><a href="//www.shsu.edu/intranet/policies/contacts.html">University Contacts</a></li>
+                <li><a href="//www.shsu.edu/directory">Personnel & Department Search</a></li>
+                <li><a href="//www.shsu.edu/home/information_request.html">Contact the Web Editor</a></li>
+                <li><a href="//www.shsu.edu/dept/office-of-the-president/">Office of the President</a></li>
+                <li><a href="//www.shsu.edu/about/people/our_admin.html">Administration</a></li>
+                <li><a href="//www.shsu.edu/about/people/our_faculty_and_staff.html">Faculty & Staff</a></li>
+                <li><a href="//www.shsu.edu/about/people/our_students.html">Students</a></li>
+                <li><a href="//www.shsu.edu/~hrd_www/employment/">Employment</a></li>
+              </ul>
+            </div>
+            <div class="small-12 large-3 columns show-for-large-up">
+              <ul class="side-nav">
+                <li class="heading">More SHSU</li>
+                <li><a href="//www.shsu.edu/gradcat/accreditation.html">Accreditations</a></li>
+                <li><a href="//www.shsu.edu/intranet/site_policies.html">Policies</a></li>
+                <li><a href="http://www.state.tx.us/">State of Texas</a></li>
+                <li><a href="//www.shsu.edu/administrative/policies/administrative/documents/pre20openrecordspolicy.pdf">Open Records</a></li>
+                <li><a href="//www.shsu.edu/intranet/policies/emergency_response/index.html">Emergency Policies & Procedures</a></li>
+                <li><a href="http://www.texashomelandsecurity.com/">Texas Homeland Security</a></li>
+                <li><a href="http://veterans.portal.texas.gov/en/Pages/default.aspx">Texas Veterans Portal</a></li>
+                <li><a href="http://www.tsl.state.tx.us/trail/">TRAIL</a></li>
+                <li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=12867">Report Fraud and Abuse</a></li>
+              </ul>
+            </div>
+            <div class="small-12 large-3 columns show-for-large-up">
+              <ul class="side-nav">
+                <li class="filler show-for-large-up">&nbsp;</li>
+                <li><a href="http://sao.fraud.state.tx.us/">The Texas State Auditor's Office Hotline</a></li>
+                <li><a href="http://www.thecb.state.tx.us/apps/resumes/">Online Institutional Resumes</a></li>
+                <li><a href="http://governor.state.tx.us/disabilities/">Governor's Committee on People with Disabilities</a></li>
+                <li><a href="http://www.texastransparency.org/State_Finance/Spending/">Where the Money Goes</a></li>
+                <li><a href="//www.shsu.edu/compact.html">Compact with Texans</a></li>
+                <li><a href="http://www.collegeportraits.org/TX/SHSU">College Portrait</a></li>
+                <li><a href="http://www.shsu.edu/services/HB2504.html">HB 2504 Compliance</a></li>
+                <li><a href="//www.shsu.edu/intranet/policies/administrative/documents/shaccessibility.pdf">Web Site Accessibility</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="hide-for-large-up">
+            <div id="footer-nav">
+              <ul>
+                <li class="sub"><a href="#">Maps & Contacts <small>Menu</small></a>
+                  <ul>
+                    <li><a href="//www.shsu.edu/map">Campus Map</a></li>
+                    <li><a href="//www.shsu.edu/intranet/policies/contacts.html">University Contacts</a></li>
+                    <li><a href="//www.shsu.edu/directory">Personnel & Department Search</a></li>
+                    <li><a href="//www.shsu.edu/home/information_request.html">Contact the Web Editor</a></li>
+                    <li><a href="//www.shsu.edu/dept/office-of-the-president/">Office of the President</a></li>
+                    <li><a href="//www.shsu.edu/about/people/our_admin.html">Administration</a></li>
+                    <li><a href="//www.shsu.edu/about/people/our_faculty_and_staff.html">Faculty & Staff</a></li>
+                    <li><a href="//www.shsu.edu/about/people/our_students.html">Students</a></li>
+                    <li class="last"><a href="//www.shsu.edu/~hrd_www/employment/">Employment</a></li>
+                  </ul>
+                </li>
+                <li class="sub last"><a href="#">More SHSU <small>Menu</small></a>
+                  <ul>
+                    <li><a href="//www.shsu.edu/gradcat/accreditation.html">Accreditations</a></li>
+                    <li><a href="//www.shsu.edu/intranet/site_policies.html">Policies</a></li>
+                    <li><a href="http://www.state.tx.us/">State of Texas</a></li>
+                    <li><a href="//www.shsu.edu/administrative/policies/administrative/documents/pre20openrecordspolicy.pdf">Open Records</a></li>
+                    <li><a href="//www.shsu.edu/intranet/policies/emergency_response/index.html">Emergency Policies & Procedures</a></li>
+                    <li><a href="http://www.texashomelandsecurity.com/">Texas Homeland Security</a></li>
+                    <li><a href="http://veterans.portal.texas.gov/en/Pages/default.aspx">Texas Veterans Portal</a></li>
+                    <li><a href="http://www.tsl.state.tx.us/trail/">TRAIL</a></li>
+                    <li><a href="https://secure.ethicspoint.com/domain/en/report_custom.asp?clientid=12867">Report Fraud and Abuse</a></li>
+                    <li><a href="http://sao.fraud.state.tx.us/">The Texas State Auditor's Office Hotline</a></li>
+                    <li><a href="http://www.thecb.state.tx.us/apps/resumes/">Online Institutional Resumes</a></li>
+                    <li><a href="http://governor.state.tx.us/disabilities/">Governor's Committee on People with Disabilities</a></li>
+                    <li><a href="http://www.texastransparency.org/State_Finance/Spending/">Where the Money Goes</a></li>
+                    <li><a href="//www.shsu.edu/compact.html">Compact with Texans</a></li>
+                    <li><a href="http://www.collegeportraits.org/TX/SHSU">College Portrait</a></li>
+                    <li><a href="http://www.shsu.edu/services/HB2504.html">HB 2504 Compliance</a></li>
+                    <li class="list"><a href="//www.shsu.edu/intranet/policies/administrative/documents/shaccessibility.pdf">Web Site Accessibility</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="shsu-footer-last">
+          <div class="row">
+            <div class="small-12 medium-3 large-6 columns">
+              <a href="http://www.tsus.edu/" ><img src="http://www.shsu.edu/global/images/responsive/a-member-of-the-texas-state-university-system.png" alt="Member of The Texas State University System" id="tsus-logo" style="border: none;" /></a>
+            </div>
+            <div class="small-12 medium-9 large-6 columns show-for-medium-up">
+              <ul class="inline-list right">
+                <li>Follow SHSU on:</li>
+                <li><a href="http://www.facebook.com/samhoustonstate" target="_blank" title="Like Sam Houston State University on Facebook" class="social"><i class="icon-social-facebook"></i><span class="hide">Facebook</span></a></li>
+                <li><a href="http://twitter.com/samhoustonstate" target="_blank" title="Follow Sam Houston State on Twitter" class="social"><i class="icon-social-twitter"></i><span class="hide">Twitter</span></a></li>
+                <li><a href="http://instagram.com/samhoustonstate" target="_blank" title="Follow Sam Houston State on Instagram" class="social"><i class="icon-social-instagram"></i><span class="hide">Instagram</span></a></li>
+                <li><a href="https://www.youtube.com/channel/UCKfJV7HQ7sw23LGbBvTxQJQ" target="_blank" title="Subscribe to Sam Houston State University on YouTube" class="social"><i class="icon-social-youtube"></i><span class="hide">YouTube</span></a></li>
+                <li><a href="http://www.flickr.com/photos/samhoustonstateu/sets/" target="_blank" title="Check out SHSU's photos on Flickr" class="social"><i class="icon-social-flickr"></i><span class="hide">Flickr</span></a></li>
+                <li><a href="http://www.linkedin.com/company/sam-houston-state-university" target="_blank" title="Connect with SHSU on LinkedIn" class="social"><i class="icon-social-linkedin"></i><span class="hide">LinkedIn</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </footer>
+    </div>
+  </div>
+  <script src="http://www.shsu.edu/global/foundation-framework/js/foundation.min.js"></script>
+  <script type="text/javascript" src="http://www.shsu.edu/global/scripts/slick/slick.min.js"></script>
+  <script type="text/javascript">
+
+  // Slick Carrousel
+  $(document).ready(function(){
+    $('.shsu-carrousel-nocaption').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      arrows: false,
+      speed: 1000,
+      fade: true,
+      cssEase: 'linear'
     });
 
-    $(".lwn0").css({
-        "float": "left"
+    $('.shsu-carrousel-caption').slick({
+      autoplay: true,
+      autoplaySpeed: 6000,
+      dots: true,
+      speed: 500,
+      cssEase: 'linear'
     });
+  });
 
-    $(".lwn").css({
-        "text-align": "center"
-    });
-    /*
-    var repJan = $(".lwn0").html().replace(/Jan/g, "January");
-    $(".lwn0").html(repJan);
+</script>
+<script type="text/javascript">
 
-    var repFeb = $(".lwn0").html().replace(/Feb/g, "February");
-    $(".lwn0").html(repFeb);
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10614326-1']);
+  _gaq.push(['_setDomainName', 'shsu.edu']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
 
-    var repMar = $(".lwn0").html().replace(/Mar/g, "March");
-    $(".lwn0").html(repMar);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-    var repApr = $(".lwn0").html().replace(/Apr/g, "April");
-    $(".lwn0").html(repApr);
-
-    // Nothing to do for May. Yeehaw!
-
-    var repJun = $(".lwn0").html().replace(/Jun/g, "June");
-    $(".lwn0").html(repJun);
-
-    var repJul = $(".lwn0").html().replace(/Jul/g, "July");
-    $(".lwn0").html(repJul);
-
-    var repAug = $(".lwn0").html().replace(/Aug/g, "August");
-    $(".lwn0").html(repAug);
-
-    var repSep = $(".lwn0").html().replace(/Sep/g, "September");
-    $(".lwn0").html(repSep);
-
-    var repOct = $(".lwn0").html().replace(/Oct/g, "October");
-    $(".lwn0").html(repOct);
-
-    var repNov = $(".lwn0").html().replace(/Nov/g, "November");
-    $(".lwn0").html(repNov);
-
-    var repDec = $(".lwn0").html().replace(/Dec/g, "December");
-    $(".lwn0").html(repDec);
-    */
-// ]]></script>
+</script>
+</body>
+</html>
