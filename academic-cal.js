@@ -1,6 +1,8 @@
 var paramString;
 var rep; // This variable is used for replacing the caption to show correct semester title.
 var weekdayMonth;
+var currentYear;
+var currentMonth;
 var weekdayDay;
 var weekdayYear;
 var monthSubstring;
@@ -21,6 +23,8 @@ var URLParams = {Sem: selectedSemester, Year: selectedYear};
 var date;
 var dateRange; //date range used for api calling
 var weekday = new Array(7);
+var defaultAutoSelectMonth;
+var defaultAutoSelectYear;
 var yearInt;
 weekday[0] = 'Sunday';
 weekday[1] = 'Monday';
@@ -29,8 +33,63 @@ weekday[3] = 'Wednesday';
 weekday[4] = 'Thursday';
 weekday[5] = 'Friday';
 weekday[6] = 'Saturday';
+/*currentMonth[0] = 'January';
+currentMonth[1] = 'February';
+currentMonth[2] = 'March';
+currentMonth[3] = 'April';
+currentMonth[4] = 'May';
+currentMonth[5] = 'June';
+currentMonth[6] = 'July';
+currentMonth[7] = 'August';
+currentMonth[8] = 'September';
+currentMonth[9] = 'October';
+currentMonth[10] = 'November';
+currentMonth[11] = 'December';*/
 
 $(document).ready(function() {
+
+  currentYear = (new Date).getFullYear();
+  currentMonth = (new Date).getMonth();
+
+  if ( (currentMonth == 0 ) || (currentMonth == 1) || (currentMonth == 9) || (currentMonth == 10) || (currentMonth == 11) ){
+    defaultAutoSelectMonth = "Spring";
+    $("#Semester").html("<option value='Fall'>Fall</option> "
+                        + "<option value='Spring' selected>Spring</option> "
+                        + "<option value='Summer'>Summer</option>");
+  }
+
+  else if ( (currentMonth == 2 ) || (currentMonth == 3) || (currentMonth == 4) || (currentMonth == 5)){
+    defaultAutoSelectMonth = "Summer";
+    $("#Semester").html("<option value='Fall'>Fall</option> "
+                        + "<option value='Spring'>Spring</option> "
+                        + "<option value='Summer' selected>Summer</option>");
+  }
+
+  else if ( (currentMonth == 6) || (currentMonth == 7) || (currentMonth == 8) ){
+    defaultAutoSelectMonth = "Fall";
+    $("#Semester").html("<option value='Fall' selected>Fall</option> "
+                        + "<option value='Spring'>Spring</option> "
+                        + "<option value='Summer'>Summer</option>");
+  }
+
+  if (defaultAutoSelectMonth == "Spring"){
+    $("#Year").html("<option value=" + (currentYear - 3).toString() + ">" + (currentYear - 3).toString() + "</option>"
+                    + "<option value=" + (currentYear - 2).toString() + ">" + (currentYear - 2).toString() + "</option>"
+                    + "<option value=" + (currentYear - 1).toString() + ">" + (currentYear - 1).toString() + "</option>"
+                    + "<option value=" + (currentYear).toString() + ">" + (currentYear).toString() + "</option>"
+                    + "<option value=" + (currentYear + 1).toString() + " selected >" + (currentYear + 1).toString() + "</option>"
+                    + "<option value=" + (currentYear + 2).toString() + ">" + (currentYear + 2).toString() + "</option>"
+                    + "<option value=" + (currentYear + 3).toString() + ">" + (currentYear + 3).toString() + "</option>");
+  }
+  else {
+    $("#Year").html("<option value=" + (currentYear - 3).toString() + ">" + (currentYear - 3).toString() + "</option>"
+                    + "<option value=" + (currentYear - 2).toString() + ">" + (currentYear - 2).toString() + "</option>"
+                    + "<option value=" + (currentYear - 1).toString() + ">" + (currentYear - 1).toString() + "</option>"
+                    + "<option value=" + (currentYear).toString() + "selected >" + (currentYear).toString() + "</option>"
+                    + "<option value=" + (currentYear + 1).toString() + ">" + (currentYear + 1).toString() + "</option>"
+                    + "<option value=" + (currentYear + 2).toString() + ">" + (currentYear + 2).toString() + "</option>"
+                    + "<option value=" + (currentYear + 3).toString() + ">" + (currentYear + 3).toString() + "</option>");
+  }
 
   selectedYear = $("#Year").find(":selected").text();
   selectedSemester = $("#Semester").find(":selected").text();
@@ -49,35 +108,17 @@ $(document).ready(function() {
   var yearParam = $.urlParam('Year');
 
   if (semParam == "Spring" || semParam == "Fall" || semParam == "Summer"){
-
-  //  $("#Semester option:selected").removeAttr("selected");
-  //  $("select option[value='" + semParam +"']").attr("selected","test");
     $("#Semester").val(semParam);
-
     selectedSemester = semParam;
   }
+  var linkSemester = selectedSemester;
 
   if ( !isNaN(yearParam) && yearParam ) {
+  $("#Year").val(yearParam);
     selectedYear = yearParam;
   }
 
-  window.onload = apiCall();
-
-});
-
-
-function firstLoadEvent() {
-  dateRange = "&start=" + (parseInt(selectedYear) - 1) + "-08-01&end=" + selectedYear + "-07-31&pp=250";
-  $(".body-text").html("");
-  $(".academic-calendar-json").html("<caption class='semester-header'></caption>");
-  $(".semester-header").html(selectedSemester + " " + selectedYear + " Semester";);
-  apiCall();
-}
-
-/*
-$(".submit").click(function() {
-
-    eventID = []; //clear the array. If array does not get cleared, if you click away from a semester, then click back - no events will appear.
+  eventID = []; //clear the array. If array does not get cleared, if you click away from a semester, then click back - no events will appear.
 
     yearInt = parseInt(selectedYear);
     lowCaseSemester = selectedSemester.toLowerCase();
@@ -86,7 +127,6 @@ $(".submit").click(function() {
     if (yearInt < 2016) {
       $(location).attr('href', 'http://www.shsu.edu/~reg_www/academic_calendar/index.php?semester=' + lowCaseSemester + '&year=' + selectedYear + '&Submit=View+Calendar');
     }
-
     else {
       $(".body-text").html("");
       $(".academic-calendar-json").html("<caption class='semester-header'></caption>");
@@ -119,18 +159,13 @@ $(".submit").click(function() {
           $(".semester-header-two").html(rep);
           dateRange = "&start=" + selectedYear + "-01-01&end=" + selectedYear + "-12-31&pp=250";
           apiCall("-two");
-
       }
 
       selectedSemester = selectedSemester.toLowerCase();
     }
-  });
 
-*/
-
-function apiCall(calTableNumber) {
-
-    calTableNumber = typeof calTableNumber !== 'undefined' ? calTableNumber : "";
+  function apiCall(calTableNumber) {
+  calTableNumber = typeof calTableNumber !== 'undefined' ? calTableNumber : "";
 
     $.ajax({
         url: "https://events.shsu.edu/api/2/events/?keyword=" + selectedSemester + selectedYear + dateRange,
@@ -269,3 +304,5 @@ function apiCall(calTableNumber) {
         }
     });
 }
+  $("#cal-print").attr("href", "http://www.shsu.edu/dept/registrar/calendars/academic-calendar-print.html?Sem=" + linkSemester + "&Year=" + selectedYear);
+});
