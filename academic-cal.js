@@ -140,7 +140,7 @@ $(document).ready(function() {
 
     //Old Semesters Redirect
     if (yearInt < 2016) {
-      $(location).attr('href', 'http://www.shsu.edu/~reg_www/academic_calendar/index.php?semester=' + lowCaseSemester + '&year=' + selectedYear + '&Submit=View+Calendar');
+      $(location).attr('href', 'http://www.shsu.edu/~reg_www/academic_calendar/index.php?semester=' + lowCaseSemester + '&year=' + yearParam + '&Submit=View+Calendar');
     }
     else {
       $(".body-text").html("");
@@ -158,14 +158,17 @@ $(document).ready(function() {
           dateRange = "&start=" + selectedYear + "-03-01&end=" + (parseInt(selectedYear) + 1) + "-01-31&pp=250";
           apiCall();
 
+
       } else if (selectedSemester === "Spring") {
           dateRange = "&start=" + (parseInt(selectedYear) - 1) + "-08-01&end=" + selectedYear + "-07-31&pp=250";
           apiCall();
+
 
       } else if (selectedSemester === "Summer") {
           selectedSemester = "summerI"
           dateRange = "&start=" + selectedYear + "-01-01&end=" + selectedYear + "-12-31&pp=250";
           apiCall();
+
 
           $(".body-text").append("<br><p><strong>RESIGNATION NOTE</strong>:Students may resign with a 'W' grade from the 13th class day until the deadline posted in the academic calendar. However, if a final exam has been given for any course or lab, you will NOT be permitted to resign.</p> <br> <table class='academic-calendar-json-two' border='1' style='width:100%'><caption class='semester-header-two'></caption></table>");
 
@@ -174,6 +177,7 @@ $(document).ready(function() {
           $(".semester-header-two").html(rep);
           dateRange = "&start=" + selectedYear + "-01-01&end=" + selectedYear + "-12-31&pp=250";
           apiCall("-two");
+
       }
 
       selectedSemester = selectedSemester.toLowerCase();
@@ -313,11 +317,34 @@ $(document).ready(function() {
                 }
 
             }
+
+            checkEventIDArray();
+
         },
         error: function() {
             alert("Error");
         }
     });
 }
+
+function checkEventIDArray() {
+  if (eventID.length == 0) {
+
+    if (selectedSemester == "spring" || selectedSemester == "fall"){
+      $('.academic-calendar-json').html("<h3>There are no events for " +
+      selectedSemester.charAt(0).toUpperCase() + selectedSemester.slice(1) + " "
+       + selectedYear + " at this time. Please check back at a later date.</h3>");
+   }
+
+   else {
+     $('.academic-calendar-json').html("<h3>There are no events for Summer " + selectedYear +
+     " at this time. Please check back at a later date. </h3>");
+     $('.academic-calendar-json-two').html('');
+     $('.body-text').html('');
+   }
+
+  }
+}
+
   $("#cal-print").attr("href", "http://www.shsu.edu/dept/registrar/calendars/academic-calendar-print.html?Sem=" + linkSemester + "&Year=" + selectedYear);
 });
