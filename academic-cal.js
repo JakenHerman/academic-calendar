@@ -72,7 +72,7 @@ $(document).ready(function() {
                         + "<option value='Summer'>Summer</option>");
   }
 
-  if (defaultAutoSelectMonth == "Spring"){
+  function YearPlusOne(){
     $("#Year").html("<option value=" + (currentYear - 3).toString() + ">" + (currentYear - 3).toString() + "</option>"
                     + "<option value=" + (currentYear - 2).toString() + ">" + (currentYear - 2).toString() + "</option>"
                     + "<option value=" + (currentYear - 1).toString() + ">" + (currentYear - 1).toString() + "</option>"
@@ -81,7 +81,8 @@ $(document).ready(function() {
                     + "<option value=" + (currentYear + 2).toString() + ">" + (currentYear + 2).toString() + "</option>"
                     + "<option value=" + (currentYear + 3).toString() + ">" + (currentYear + 3).toString() + "</option>");
   }
-  else {
+
+  function Year(){
     $("#Year").html("<option value=" + (currentYear - 3).toString() + ">" + (currentYear - 3).toString() + "</option>"
                     + "<option value=" + (currentYear - 2).toString() + ">" + (currentYear - 2).toString() + "</option>"
                     + "<option value=" + (currentYear - 1).toString() + ">" + (currentYear - 1).toString() + "</option>"
@@ -89,6 +90,18 @@ $(document).ready(function() {
                     + "<option value=" + (currentYear + 1).toString() + ">" + (currentYear + 1).toString() + "</option>"
                     + "<option value=" + (currentYear + 2).toString() + ">" + (currentYear + 2).toString() + "</option>"
                     + "<option value=" + (currentYear + 3).toString() + ">" + (currentYear + 3).toString() + "</option>");
+  }
+
+  if (defaultAutoSelectMonth == "Spring"){
+     if ((currentMonth == 0) || (currentMonth == 1)){
+         YearPlusOne();
+     }
+     else {
+          Year();
+     }
+  }
+  else {
+    Year();
   }
 
   selectedYear = $("#Year").find(":selected").text();
@@ -116,6 +129,20 @@ $(document).ready(function() {
   if ( !isNaN(yearParam) && yearParam ) {
   $("#Year").val(yearParam);
     selectedYear = yearParam;
+  }
+
+  if ((yearParam > (currentYear + 3)) || (yearParam < (currentYear - 3))){
+    if (defaultAutoSelectMonth == "Spring"){
+      yearParam = currentYear + 1;
+      selectedYear = currentYear + 1;
+      YearPlusOne();
+    }
+    else {
+      semParam = selectedSemester;
+      yearParam = currentYear;
+      selectedYear = currentYear;
+      Year();
+    }
   }
 
   eventID = []; //clear the array. If array does not get cleared, if you click away from a semester, then click back - no events will appear.
