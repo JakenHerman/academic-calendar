@@ -33,18 +33,6 @@ weekday[3] = 'Wednesday';
 weekday[4] = 'Thursday';
 weekday[5] = 'Friday';
 weekday[6] = 'Saturday';
-/*currentMonth[0] = 'January';
-currentMonth[1] = 'February';
-currentMonth[2] = 'March';
-currentMonth[3] = 'April';
-currentMonth[4] = 'May';
-currentMonth[5] = 'June';
-currentMonth[6] = 'July';
-currentMonth[7] = 'August';
-currentMonth[8] = 'September';
-currentMonth[9] = 'October';
-currentMonth[10] = 'November';
-currentMonth[11] = 'December';*/
 
 $(document).ready(function() {
 
